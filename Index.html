@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temperature Warning</title>
+<style>
+body{
+  margin:0;
+  background:black;
+  color:white;
+  font-family:system-ui, -apple-system, Roboto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  text-align:center;
+}
+.box{
+  max-width:300px;
+}
+.warn{
+  color:#ff3b30;
+  font-size:20px;
+  font-weight:600;
+}
+.small{
+  margin-top:10px;
+  font-size:14px;
+  opacity:0.85;
+}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="warn">⚠️ Temperature Warning</div>
+  <div class="small">
+    Your phone needs to cool down before you can use it.<br><br>
+    Apps may close to protect your device.
+  </div>
+</div>
+
+<script>
+document.body.style.pointerEvents="none";
+setTimeout(()=>{
+  document.body.innerHTML="<h2>😄 Prank Over</h2>";
+  document.body.style.pointerEvents="auto";
+},10000);
+</script>
+</body>
+</html>
